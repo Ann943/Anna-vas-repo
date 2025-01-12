@@ -1,0 +1,122 @@
+body {
+  background: rgb(238, 174, 202);
+  background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(214, 215, 31, 0.5578606442577031) 100%);
+  margin: 0px;
+}
+nav {
+  border: 2px inset;
+  text-align: right;
+  font-size: x-large;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 0.5858718487394958) 79%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 70px;
+}
+.crumbs ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+.crumb {
+  display: inline-block;
+  margin-right: 40px;
+}
+.crumb a::after {
+  display: inline-block;
+  color: #000;
+  font-weight: 600;
+  padding: 0 3px;
+}
+h1 {
+  font-family: monospace;
+  font-size: xx-large;
+  text-align: center;
+  text-shadow: 2px 2px 5px lightcoral;
+  animation-duration: 3s;
+  animation-name: slide-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-top: 80px;
+}
+.header {
+  text-align: center;
+  margin: 2%;
+}
+h3 {
+  text-align: left;
+  margin-left: 40px;
+}
+.content {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.container {
+  margin: 80px auto 50px auto;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: block;
+  position: relative;
+  width: 50%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #d555da;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.top {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 10px 20px;
+}
+.logo,
+.logo-image {
+  height: 48px;
+  width: 48px;
+  transition: 0.2s;
+}
+.contact-content {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
